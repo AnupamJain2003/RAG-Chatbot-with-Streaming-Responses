@@ -12,23 +12,9 @@ This project is an end-to-end Retrieval-Augmented Generation (RAG) chatbot built
 
 4. /src          - Core backend modules
 
-  cleaning.py       - Cleans and preprocesses PDF text
-  
-  embedding.py      - Loads sentence transformer embeddings
-  
-  retriever.py      - Loads FAISS and creates retriever
-  
-  generator.py      - Loads HuggingFace LLM
-  
-  rag_pipeline.py   - Builds prompt + RAG pipeline
-  
-  stream_handler.py - Custom Streamlit-compatible stream output
+5. notebooks/    - Jupyter testing & dev notebooks
 
-5. app.py        - Streamlit UI with streaming support
-
-6. notebooks/    - Jupyter testing & dev notebooks
-
-7. requirements.txt - Python dependencies
+6. requirements.txt - Python dependencies
 
 # Preprocessing & Pipeline Setup
 
@@ -72,5 +58,4 @@ The chatbot delivers a real-time, conversational experience by using a custom St
 achieved by enabling streaming=True when loading the LLM and using a dynamic placeholder (st.empty()) in the Streamlit interface to update the UI incrementally. As a result,
 responses appear as if the bot is “typing” live, improving interactivity and reducing perceived latency.
 
-# Demo Video
-link = https://drive.google.com/file/d/1YzcJhLnmLwj1sqX7txceyrTKv4HKny_-/view?usp=sharing
+
